@@ -1,8 +1,10 @@
 <header>
     <ul>
-        <li><a href="{% url "root:index" %}"> Home </a></li>
-        <li><a href="{% url "first_example:index" %}"> Greetings </a></li>
-        <li><a href="{% url "first_example:hello_with_args" name="Mary" age=20 %}"> Greetings with args </a></li>
-        <li><a href="{% url "first_example:users" amount=5 %}"> Users </a></li>
+        <li>
+            <a href="{% url "root:index" %}">Main page</a>
+        </li>
+        <li>
+            <a href="{% url "example:users" amount=10 %}">Users with amount</a>
+        </li>
     </ul>
 </header>

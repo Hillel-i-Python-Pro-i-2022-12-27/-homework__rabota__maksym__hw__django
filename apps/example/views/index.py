@@ -6,5 +6,4 @@ def index(request: WSGIRequest):
     return render(
         request=request,
         template_name="index.html",
-
     )
