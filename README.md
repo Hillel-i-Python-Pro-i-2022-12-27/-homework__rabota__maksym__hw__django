@@ -1,27 +1,40 @@
-📝Homework 5
-▶️Run
-Run homework without docker.
-
+## 📝Homework 8
+Django. Templates. Data generators for users.
+***
+### ▶️Run
+Run homework.
+```shell
 make homework-i-run
-🗑️Purge
+```
+### 🗑️Purge
+```shell
 make homework-i-purge
-🛠️Dev
-⚙️Initialize dev
+```
+***
+## 🛠️Dev
+### ⚙️Initialize dev
+Install dependencies and register pre-commit.
+```shell
 make init-dev
-🐳Docker
+```
+***
+## 🐳Docker
 Use services in dockers.
-
-▶️Run
+### ▶️Run
 Make all actions needed for run homework from zero.
-
+```shell
 make d-homework-i-run
-⏹️Stop
+```
+### ⏹️Stop
 Stop services
-
+```shell
 make d-stop
-🗑️Purge
+```
+### 🗑️Purge
 Purge all data related with services
-
+```shell
 make d-homework-i-purge
+```
+
 
 😤 😤 😤 😤
