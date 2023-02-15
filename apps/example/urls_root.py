@@ -4,4 +4,6 @@ from apps.example import views
 
 app_name = "root"
 
-urlpatterns = [path("", views.index, name="index"), ]
+urlpatterns = [
+    path("", views.index, name="index"),
+]

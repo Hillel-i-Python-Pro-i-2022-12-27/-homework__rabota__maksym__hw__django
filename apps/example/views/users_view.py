@@ -2,6 +2,7 @@ from django.views.generic import TemplateView
 
 from apps.example.services.ganerate_users import generate_users
 
+
 class UsersView(TemplateView):
     template_name = "users/users.html"
 
