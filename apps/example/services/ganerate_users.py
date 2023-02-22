@@ -22,7 +22,8 @@ fake = Faker()
 def generate_user() -> User:
     login = f"{fake.unique.first_name()}"
     password = get_random_string(randint(8, 16))
-    return User(login=login, email=f"{login}.{randint(100, 999)}", password=password)
+    domain = fake.domain_name()
+    return User(login=login, email=f"{login}{randint(100, 999)}@{domain}", password=password)
 
 
 def generate_users(amount: int = 10) -> Iterator[User]:
